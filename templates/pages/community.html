@@ -3,7 +3,7 @@
 
 {% macro speak_kotlin_link(href, text, class, comment=None) %}
     <div class="all-speak-kotlin_link _{{ class }}" data-svg-id="{{ class.replace('-', '_') }}">
-        <a href="{{ href }}" class="all-speak-kotlin_link-button">
+        <a href="{{ href }}" class="all-speak-kotlin_link-button" title="{{ text }}">
             <span>{{ text }}</span>
             <div class="all-speak-kotlin_link-pointer"></div>
         </a>
@@ -23,15 +23,15 @@
         <div class="page-community-panels page-community__panels">
             <a href="/community/user-groups.html"
                class="page-community-panels__item page-community-panels__item_type_makethkug">
-                <p class="page-community-panels__para">Join Kotlin User Groups movement</p>
+                <p class="page-community-panels__para" title="Join Kotlin User Groups Movement">Join Kotlin User Groups Movement</p>
             </a>
             <a href="/community/events.html"
                class="page-community-panels__item page-community-panels__item_type_events">
-                <p class="page-community-panels__para">Find inspiration at a Kotlin event or host one yourself</p>
+                <p class="page-community-panels__para" title="Find inspiration at a Kotlin event or host one yourself">Find inspiration at a Kotlin event or host one yourself</p>
             </a>
             <a href="/docs/contribute.html"
                class="page-community-panels__item page-community-panels__item_type_contribution">
-                <p class="page-community-panels__para">Contribute to the language and ecosystem</p>
+                <p class="page-community-panels__para" title="Contribute to the language and ecosystem">Contribute to the language and ecosystem</p>
             </a>
         </div>
 
@@ -42,7 +42,7 @@
                     {{ speak_kotlin_link("http://talkingkotlin.com", 'Talking Kotlin Podcast', 'talking_kotlin') }}
                     {{ speak_kotlin_link(config.REDDIT_URL, 'Reddit', 'reddit') }}
                     {{ speak_kotlin_link("//kotlinlang.slack.com/", 'Slack', 'slack',
-                            comment='get invite <a href="' + config.SLACK_URL + '">here</a>') }}
+                            comment='get invite <a href="' + config.SLACK_URL + '" title="Here">here</a>') }}
                     {{ speak_kotlin_link("//www.linkedin.com/groups/7417237/profile", 'LinkedIn', 'linkedin',
                         comment='Mostly for job related post') }}
                 </div>
