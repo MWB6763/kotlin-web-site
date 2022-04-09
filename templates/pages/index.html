@@ -20,13 +20,13 @@
 
     <section class="kotlin-banner-section kto-overview-section kto-overview-section_mode_dark">
         <div class="g-layout">
-            <h2 class="kotlin-banner-section__header kto-heading kto-heading_size_h1">Latest from Kotlin</h2>
+            <h2 class="kotlin-banner-section__header kto-heading kto-heading_size_h1">Latest From Kotlin</h2>
             <div class="kotlin-banner-section__banner">
                 <a target="_blank" class="kotlin-banner-section__link"
                    href="https://blog.jetbrains.com/kotlin/2022/04/kotlin-1-6-20-released/">
                     <picture>
                         <source media="(max-width: 537px)" srcset="/assets/images/index/banners/kotlin-1.6.20-mobile.png">
-                        <img src="/assets/images/index/banners/kotlin-1.6.20.png" alt="Kotlin 1.6.20 released " width="100%">
+                        <img src="/assets/images/index/banners/kotlin-1.6.20.png" alt="Kotlin 1.6.20 released" width="100%">
                     </picture>
                 </a>
             </div>
@@ -37,7 +37,7 @@
                         {% for news in news_list %}
                             {% set domain_link = get_domain(news.link) %}
                             <a class="kotlin-news-section__item" href="{{ news.link }}"{% if domain_link %}
-                               target="_blank"{% endif %}>
+                               target="_blank"{% endif %} title="News">
                                 <p class="kto-text kto-text_size_s">
                                     {% if news.tag %}{{ news.tag }}
                                         {% elif domain_link %}{{ domain_link }}
@@ -55,7 +55,7 @@
 
             <div class="kotlin-news-section__button">
                 <a class="kto-button kto-button_theme_dark kto-button_size_l kto-button_mode_outline"
-                   href="https://blog.jetbrains.com/kotlin/" target="_blank">Kotlin blog ↗</a>
+                   href="https://blog.jetbrains.com/kotlin/" target="_blank" title="Kotlin Blog">Kotlin Blog↗</a>
             </div>
         </div>
     </section>
@@ -65,12 +65,12 @@
     <section id="usage-highlights" class="kto-overview-section kotlin-highlights-section">
         <div class="g-layout">
             <h2 class="kotlin-highlights-section__title kto-heading kto-heading_size_hero">
-                <a class="kto-anchor-link kto-anchor-link--hover-white" href="#usage-highlights">Kotlin Usage Highlights</a>
+                <a class="kto-anchor-link kto-anchor-link--hover-white" href="#usage-highlights" title="Kotlin Usage Highlights">Kotlin Usage Highlights</a>
             </h2>
             <div class="kto-highlights">
                 {% for testimonial in data.testimonials %}
                     <a class="kto-highlights-item kto-highlights-item_company_{{ testimonial.company.lower() | safe }}"
-                       href="{{ testimonial.url | safe }}" target="_blank">
+                       href="{{ testimonial.url | safe }}" target="_blank" title="{{ testimonial.company | safe }} - {{ testimonial.text | safe }}">
                         <h3 class="kto-highlights-item__header">{{ testimonial.company | safe }}</h3>
                         <div class="kto-highlights-item__text">{{ testimonial.text | safe }}</div>
                     </a>
@@ -85,7 +85,7 @@
         <div class="g-layout">
             <p class="kto-text kto-text_size_s">How about to try?</p>
             <h2 class="kto-heading kto-heading_size_hero kotlin-get-started-section__title">
-                <a class="kto-anchor-link" href="#get-started">
+                <a class="kto-anchor-link" href="#get-started" title="Start using Kotlin today! Build your first app in your favorite IDE">
                     Start using Kotlin today!<br>
                     Build your first app in your favorite IDE
                 </a>
@@ -93,7 +93,7 @@
             <a
                     class="kto-button kto-button_size_m kto-button_mode_contrast smooth-anchor"
                     href="/docs/getting-started.html"
-            >Get started</a>
+            title="Get started">Get started</a>
         </div>
     </section>
 {% endblock %}
