@@ -17,14 +17,14 @@ Kotlin Slack aims to be an inclusive space that is committed to providing a frie
 
 For this to be the case, it is vital that we all follow a basic set of guidelines and most importantly adhere to the code of conduct. As such, please make sure you read this Code of Conduct and Basic Usage Guidelines in its entirety. This isn’t your regular License Agreement that you should scroll through and agree blindly. It’s here for a reason and also contains practical information. 
 
-## How to behave
+## How To Behave
 
 * Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community.
 * Exercise consideration, respect and empathy in your speech and actions. Remember, we have all been through different stages of learning when adopting technologies. 
 * Refrain from demeaning, discriminatory, or harassing behavior and speech.
 * Disagreements on things are fine, argumentative behaviour or trolling are not. 
 
-## How not to behave
+## How Not To Behave
 
 * Do *not* perform threats of violence or use violent language directed against another person.
 * Do *not* make jokes of sexist, racist, homophobic, transphobic, ableist or otherwise discriminatory nature, or use language of this nature.
@@ -34,7 +34,7 @@ For this to be the case, it is vital that we all follow a basic set of guideline
 * Do *not* engage in sexual attention. This includes, sexualized comments or jokes and sexual advances.
 * Do *not* advocate for, or encourage, any of the above behavior.
 
-## How to report issues
+## How To Report Issues
 
 If someone is acting inappropriately or violating this Code of Conduct in any shape or form, and they are not receptive to your feedback or you prefer not to confront them, please get in touch with one of the Administrators. The main Administrators are Ilya Ryzhenkov (@orangy) and Hadi Hariri (@hhariri). 
 
@@ -61,7 +61,7 @@ There are over 39000 users on many different timezones using the Kotlin Slack an
 
 ## Moderators
 
-### Role definition: 
+### Role Definition: 
 A moderator is a member of the Kotlin Slack community who volunteers to keep the kotlinlang Slack a safe and welcoming place for other members. Moderators are approved by kotlinlang Slack administrators. Their responsibilities and the guidelines they follow are described below.
 
 ### Responsibilities: 
@@ -82,14 +82,14 @@ A moderator is a member of the Kotlin Slack community who volunteers to keep the
 * Communication regarding moderation takes places in the private #moderators channel.
 * If community members notice that a moderator is ignoring their responsibilities (or engaging in any unwanted behavior), they can alert administrators.
 
-### Moderator status acquisition/revocation process:
+### Moderator Status Acquisition/Revocation Process:
 * Any member is welcome to apply to be a moderator once they have been in the Slack community for longer than 6 months.
 * Moderator status is provided based upon the decision of the administrators.
 * Moderator status can be revoked if (this list is not exhaustive and can be updated on a case-by-case basis):
   * A moderator ignores their responsibilities, which leads to issues in a channel.
   * A moderator violates these guidelines.   
 
-### The list of moderators
+### The List Of Moderators
 At the moment we have 17 confirmed moderators, and they will be responsible for observing a total of 64 channels. For all other channels, if any issues arise, members can ping any of the moderators or admins directly, or they can post a message in #meta.
 
 * Alexander Nozik	(@altavir) – #mathematics, #science, #datascience, #education
