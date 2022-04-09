@@ -45,7 +45,7 @@
                                             {% for item in item.content %}
                                                 {%- if item.type == 'identifier' -%}
                                                     <a class="grammar-identifier-name"
-                                                       href="#{{ item.name }}">{{ item.name }}</a>
+                                                       href="#{{ item.name }}" title="{{ item.name }}">{{ item.name }}</a>
                                                 {%- elif item.type == 'string' -%}
                                                     <span class="grammar-string">{{ item.content | safe }}</span>
                                                 {%- elif item.type == 'symbol' -%}
