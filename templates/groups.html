@@ -21,7 +21,7 @@
                         <a href="{{ data.url }}" {% if domain_link %} target="_blank" {% endif %}
                            class="tree-item-title tree-leaf-title js-item-title js-leaf-title {{ data.title_class }}"
                                 {% if data.title_arguments %}{{ print_arguments(data.title_arguments) }}{% endif %}
-                        >
+                        title="{{ data.title }}">
                             <span class="marker"></span>
                             <span class="text">{{ data.title }}</span>
                         </a>
