@@ -26,7 +26,7 @@
                 <div class="grammar-declaration-usedby">
                     (used by
                     {% for usage in item.usages %}
-                    <a href="#{{ usage.name }}">{{ usage.name }}</a>{% if forloop.last == false %},{% endif %}{% endfor %})
+                    <a href="#{{ usage.name }}" title="{{ usage.name }}">{{ usage.name }}</a>{% if forloop.last == false %},{% endif %}{% endfor %})
                 </div>
                 {% endif %}
             </div>
@@ -34,7 +34,7 @@
             {% when 'description' %}
             {% if item.content.size > 0 %}
             <div class="grammar-description">
-                {% for item in item.content %}{% case item.type %}{% when 'identifier' %}<a class="grammar-identifier-name" href="#{{ item.name }}">{{ item.name }}</a>{% when 'string' %}<span class="grammar-string">{{ item.content | escape }}</span>{% when 'symbol' %}<span class="grammar-symbol">{{ item.content }}</span>{% when 'other' %}<span class="grammar-other">{{ item.content }}</span>{% when 'whitespace' %}{{ item.content | replace:' ','&nbsp;' }}{% when 'crlf' %}<br>{% endcase %}{% endfor %}
+                {% for item in item.content %}{% case item.type %}{% when 'identifier' %}<a class="grammar-identifier-name" href="#{{ item.name }}" title="{{ item.name }}">{{ item.name }}</a>{% when 'string' %}<span class="grammar-string">{{ item.content | escape }}</span>{% when 'symbol' %}<span class="grammar-symbol">{{ item.content }}</span>{% when 'other' %}<span class="grammar-other">{{ item.content }}</span>{% when 'whitespace' %}{{ item.content | replace:' ','&nbsp;' }}{% when 'crlf' %}<br>{% endcase %}{% endfor %}
             </div>
             {% endif %}
 
