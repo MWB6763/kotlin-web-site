@@ -6,7 +6,7 @@
             {% for post in site.posts %}
                 {% if related.title == post.title %}
                     <li class="list-item">
-                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                     </li>
                 {% endif %}
             {% endfor %}
